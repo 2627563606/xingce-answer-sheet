@@ -1,0 +1,28 @@
+# ===== 运行数据（首次运行自动生成，勿提交） =====
+configs/
+records.db
+*.db
+*.sqlite
+*.sqlite3
+
+# ===== 部署 / 服务器相关 =====
+config.toml
+*.service
+health_check.sh
+verify_*.sh
+deploy*.tar.gz
+*.bak
+
+# ===== 样例与私有素材（含版权材料，不随仓库发布） =====
+sample/
+
+# ===== Python =====
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+
+# ===== IDE =====
+.vscode/
+.idea/

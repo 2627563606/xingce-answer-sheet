@@ -1,0 +1,22 @@
+# 行测答题卡扫描评分系统 依赖清单
+# 安装： python -m pip install -r requirements.txt
+# （若使用系统 Python 安装遇到权限问题，可改用：python -m pip install --user -r requirements.txt）
+
+# 核心
+opencv-python>=4.8
+numpy>=1.24
+streamlit>=1.32
+pandas>=2.0
+plotly>=5.18
+
+# 答案文件解析（Excel / Word / PDF）
+python-docx>=1.1
+pdfplumber>=0.11
+openpyxl>=3.1   # pandas 读写 .xlsx 的引擎
+
+# 拍照/扫描答案 OCR（图片答案 + 扫描版 PDF 回退）
+rapidocr_onnxruntime>=1.2
+PyMuPDF>=1.24    # 扫描版 PDF 逐页渲染成图供 OCR
+
+# 可选：仅生成 PDF 样例答案（sample/make_answer_samples.py 用）
+# reportlab>=4.0
